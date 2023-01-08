@@ -1,0 +1,29 @@
+.box {
+  text-align: center;
+}
+.box{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.header{
+  margin-bottom: 1em;
+  font-size: 5rem;
+  font-weight: 800;
+  
+}
+.header2{
+margin-bottom: 0.4em;
+font-style: 2rem;
+font-weight: 600;
+}
+.content{
+  margin-bottom: 5em;
+}
+#root{
+  background-color: #282c34;
+}

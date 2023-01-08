@@ -1,0 +1,19 @@
+.bgc{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.content{
+  margin-bottom: 5em;
+}
+#root{
+  background-color: #282c34;
+}
+.cards{
+  color: black;
+  margin: 0;
+}

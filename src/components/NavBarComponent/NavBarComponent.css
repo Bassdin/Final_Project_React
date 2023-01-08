@@ -1,0 +1,9 @@
+.activeLink {
+  background-color: darkslategray !important;
+  color: cornsilk !important;
+}
+.navbar{
+  margin-bottom: 1em;
+  background-color: rgb(228, 222, 212);
+}
+

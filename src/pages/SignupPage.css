@@ -1,0 +1,20 @@
+.signupBox {
+  text-align: center;
+}
+.outSideBox{
+color: purple;
+box-sizing: border-box 5px white;
+}
+.signupBox{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+#root{
+  background-color: #282c34;
+}
