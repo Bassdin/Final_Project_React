@@ -108,7 +108,7 @@ const NavBarComponent = () => {
               </NavLink>
             </li>}
 
-            {isBusiness && isloggedin && <li className="nav-item">
+            {isloggedin && <li className="nav-item">
               <NavLink
                 className={(navData) => {
                   return "nav-link " + (navData.isActive ? "activeLink" : "");

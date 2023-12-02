@@ -13,7 +13,7 @@
 #root{
   background-color: #282c34;
 }
-.cards{
-  color: black;
-  margin: 0;
+
+.search{
+  width: 600px !important;
 }

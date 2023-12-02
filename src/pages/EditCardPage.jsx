@@ -49,7 +49,7 @@ const EditCard = () => {
     .put(`/cards/${id}`,{ bizName, bizDescription, bizAddress, bizPhone, bizImage } )
     .then(({  }) => {
       toast("Card is Updated");
-      navigate("/cardspanel");
+      navigate("/Mycardspanel");
        });
   }};
 

@@ -5,6 +5,8 @@ import axios from "axios";
 import CardComponent from "../components/CardComponent/CardComponent";
 import "./AllCardsPage.css";
 import React from "react";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 const AllCardsPage = () => {
@@ -71,29 +73,34 @@ const AllCardsPage = () => {
   
   return (
     <div className="bgc">
-      <input type="search" className="cards" onKeyDown={onSearchCard} tabIndex="0"/>
-      <div className="content">
-        <div className="row row-cols-1 row-cols-md-2 g-4">
-          {cardsArr.map((item) => {
-            return (
-              <CardComponent
-                id={item._id}
-                key={item._id}
-                name={item.bizName}
-                description={item.bizDescription}
-                phone={item.bizPhone}
-                address={item.bizAddress}
-                image={item.bizImage}
-                userIDCard={item.user_id}
-                userIDLoggedIn={userInfoRedux._id}
-                onDeleteCard={onDeleteCard}
-                onToggleFavoriteCard={onToggleFavoriteCard}
-              />
-            );
-          })} 
+      <Row>
+        <input type="search" className="search mb-5 mt-5" onKeyDown={onSearchCard} tabIndex="0" placeholder="Search..."/>
+      </Row>
+      <Row style={{width:"100%"}}>
+        <div className="content" >
+          <div className="row row-cols-md-3 ">
+            {cardsArr.map((item) => {
+              return (
+                <CardComponent
+                  id={item._id}
+                  key={item._id}
+                  name={item.bizName}
+                  description={item.bizDescription}
+                  phone={item.bizPhone}
+                  address={item.bizAddress}
+                  image={item.bizImage}
+                  userIDCard={item.user_id}
+                  favorite={item.favorite}
+                  userIDLoggedIn={userInfoRedux._id}
+                  onDeleteCard={onDeleteCard}
+                  onToggleFavoriteCard={onToggleFavoriteCard}
+                />
+              );
+            })} 
+          </div>
+        </div>
+      </Row>
     </div>
-  </div>
-</div>
   );
 };
 

@@ -52,7 +52,7 @@ const CreateCard = () => {
       .post("/cards", { bizName, bizDescription, bizAddress, bizPhone, bizImage } )
       .then((res) => {
         console.log("res.data", res.data);
-        navigate("/cardspanel");
+        navigate("/AllCardsPage");
       })
       .catch((err) => {
         console.log("err", err);

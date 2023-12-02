@@ -1,7 +1,16 @@
 .font-bolder {
   font-weight: bold;
 }
-image{
-  width: 10em;
-  height: 6em;
+
+.card-img-size {
+  height: 20rem;
 }
+
+img:before {
+  content: ' ';
+  display: block;
+  height: 20rem;
+  width: 100%;
+  background-image: url('https://via.placeholder.com/300x200?text=Image+Not+Found');
+  position: absolute;
+} 

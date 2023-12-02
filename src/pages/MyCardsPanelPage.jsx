@@ -39,8 +39,8 @@ const MyCardsPanelPage = () => {
   }, []);
   return (
     <div className="bgc">
-      <div className="content">
-        <div className="row row-cols-1 row-cols-md-2 g-4">
+      <div className="content" Style={"width:100%"}>
+        <div className="row row-cols-2 row-cols-md-3 g-4 w-90">
           {cardsArr.map((item) => {
             return (
               <CardComponent

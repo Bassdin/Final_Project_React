@@ -67,12 +67,12 @@ const LoginPage = () => {
           dispatch(authActions.updateUser(decoded));
           localStorage.setItem("tokenKey", res.data.token);
           if (location.state === null) {
-            navigate("/cardspanel");
+            navigate("/AllCardsPage");
           } else {
             if (location.state.fromPage) {
               navigate(location.state.fromPage);
             } else {
-              navigate("/cardspanel");
+              navigate("/AllCardsPage");
             }
           }
         })
